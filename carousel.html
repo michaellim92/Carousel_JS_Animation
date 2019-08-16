@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanilla JS Carousel</title>
+  <link rel="stylesheet" href="carousel_style.css">
+</header>
+
+<body>
+  <div class="carousel">
+    <button class="carousel__button carousel__button--left is-hidden">
+      <img src="images/left.png" alt="left" class="carousel__direction left--button">
+    </button>
+    <div class="carousel__track-container">
+      <ul class="carousel__track">
+        <!--carousels are typically in a list, for accessibility and content-->
+        <li class="carousel__slide current-slide">
+          <img class="carousel__img" src="images/coffee_site.jpg" alt="coffee_website">
+          </img>
+        </li>
+        <li class="carousel__slide">
+          <img class="carousel__img" src="images/budget_app.jpg" alt="budget_webapp">
+          </img>
+        </li>
+        <li class="carousel__slide">
+          <img class="carousel__img" src="images/dice_game.jpg" alt="dice_game">
+          </img>
+        </li>
+      </ul>
+    </div>
+    <button class="carousel__button carousel__button--right">
+      <img src="images/right.png" alt="right" class="carousel__direction right--button">
+    </button>
+    <div class="carousel__nav">
+      <button class="carousel__indi current-slide"></button>
+      <button class="carousel__indi"></button>
+      <button class="carousel__indi"></button>
+    </div>
+  </div>
+  <script src="carousel.js"></script>
+</body>
+</html>
